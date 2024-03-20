@@ -2,6 +2,7 @@
   "host": "<YOUR_HOST>",
   "domains": {
         "ipinfo.io":" <YOUR_HOST>",
+    
     ".ua":" <YOUR_HOST>",
     "developer.android.com":" <YOUR_HOST>",
     "api.cisco.com":" <YOUR_HOST>",
