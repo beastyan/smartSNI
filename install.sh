@@ -79,7 +79,7 @@ install() {
         sed -i "s/<YOUR_HOST>/$domain/g" /root/smartSNI/nginx.conf
 
         # Obtain SSL certificates
-        certbot --nginx -d $domain --register-unsafely-without-email --non-interactive --agree-tos --redirect --must-staple --key-type ecdsa --elliptic-curve secp521r1
+        certbot --nginx -d $domain --register-unsafely-without-email --non-interactive --agree-tos --redirect --must-staple --key-type ecdsa --elliptic-curve secp384r1
 
         # Copy config
         sudo cp /root/smartSNI/nginx.conf "$nginx_conf"
